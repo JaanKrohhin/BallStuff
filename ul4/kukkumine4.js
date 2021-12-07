@@ -1,6 +1,6 @@
-var x=20, y=20, r=10;
-var ysamm=1, xsamm=0, ykiirendus=0.4;
-var t, g; //tahvel, graafiline kontekst
+let x=20, y=20, r=10;
+let ysamm=1, xsamm=0, ykiirendus=0.4;
+let t, g; //tahvel, graafiline kontekst
 function algus(){
     t=document.getElementById("tahvel");
     g=t.getContext("2d");
@@ -27,8 +27,8 @@ function joonista(){
 function liigu(){
     ysamm=ysamm+ykiirendus;
     if(kasSees(x+xsamm, y+ysamm)){
-        y=Math.random() * (51 - 20) + 20;;
-        x=Math.random() * (201 - 20) + 20;;
+        y=Math.random() * (51 - 20) + 20;
+        x=Math.random() * (201 - 20) + 20;
         ysamm=1;
     } else {
         x=x+xsamm;

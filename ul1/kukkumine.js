@@ -7,6 +7,7 @@ function algus(){
     y=20;
     r=parseInt(document.getElementById("radius").value);
     console.log(document.getElementById("radius").value);
+    console.log(document.getElementById("fall").value);
     ysamm=parseInt(document.getElementById("fall").value);
     t=document.getElementById("tahvel");
     g=t.getContext("2d");
